@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+    <p>Coloque os seus dados na calculadora e calcule o seu IMC:</p>
+    <br>
+    <form id="meuFormulario">
+        <fieldset>
+            <legend>Insira seus dados</legend>
+
+            <label for="altura">Altura</label>
+
+            <input type="number" value="" name="altura" step="0.01" placeholder="Ex: 1.65" id="altura" data-validation-type="float" data-validation-interval="[0.5, 225]" data-validation-required="1" data-validations="type interval required" data-type="number" class="_input" required="" min="0" max="225">
+            
+            <label for="m">m</label><br>
+
+            <br>
+
+            <label for="peso">Peso</label>
+
+            <input type="number" value="" name="peso" step="0.01" placeholder="Ex: 62.5" id="peso" data-validation-type="float" data-validation-interval="[0, 300]" data-validation-required="1" data-validations="type interval required" data-type="number" class="_input" required="" min="0" max="300">
+
+            <label for="kg">kg</label><br>
+
+            <br>
+
+            <button type="button" onclick="capturarValor()">Calcular</button>
+        </fieldset>
+    </form>
+    <div id="resultado">Resultado</div>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>IMC</th>
+                <th>Peso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class=" ">
+                <td>Magreza</td>
+                <td><18.5</td>
+                <td><51.6</td>
+            </tr>
+            <tr class=" ">
+                <td>Normal</td>
+                <td>18.5 a 24.9</td>
+                <td>51.6 a 69.4 Kg</td>
+            </tr>
+            <tr class=" ">
+                <td>Sobrepeso</td>
+                <td>24.9 a 30</td>
+                <td>69.4 a 83.7 Kg</td>
+            </tr>
+            <tr class=" ">
+                <td>Obesidade</td>
+                <td>> 30</td>
+                <td>> 83.7 Kg</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
