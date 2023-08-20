@@ -15,7 +15,7 @@ A página HTML oferece uma interface simples, enquanto o CSS foi utilizado princ
 3. Insira seu peso e altura nos campos indicados.
 4. Clique no botão "Calcular".
 5. O resultado do cálculo do IMC será exibido na página.
-6. Ou acesse o link clicando aqui.
+6. Ou acesse o link <a href="https://marcosserra1.github.io/Calculadora-IMC/">clicando aqui.</a>
 
 ## Próximos Passos
 
