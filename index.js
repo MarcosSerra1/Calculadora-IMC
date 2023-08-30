@@ -15,4 +15,4 @@ function capturarValor() {
     texto.innerHTML = `<p>Seu IMC é: ${imc.toFixed(2)}`;
     
   }
-  
+   
