@@ -12,7 +12,6 @@ function capturarValor() {
 
     const imc = (peso / (altura * altura));
     console.log(imc.toFixed(2));
-    texto.innerHTML = `<p>Seu IMC é: ${imc.toFixed(2)}`;
+    texto.innerHTML = `<p>Seu IMC é: ${imc.toFixed(2)}</p>`;
     
   }
-   
